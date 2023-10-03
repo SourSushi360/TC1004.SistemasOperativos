@@ -5,8 +5,12 @@
 #include <stdio.h>
 #include <unistd.h>
 int main() {
-    printf("hello world\n");
-    fork();
-    printf("otro proceso\n");
+    printf("proceso padre\n");
+    int pid = fork();
+    if (pid == 0){
+        printf("proceso hijo\n");
+    } else {
+        printf("proceso padre\n");
+    }
     return 1;
 }
