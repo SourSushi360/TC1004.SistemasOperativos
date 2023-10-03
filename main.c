@@ -7,6 +7,6 @@
 int main() {
     printf("hello world\n");
     fork();
-    
+    printf("otro proceso\n");
     return 1;
 }
