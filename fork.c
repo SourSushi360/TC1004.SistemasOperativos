@@ -10,7 +10,7 @@ int main() {
     if (pid == 0){
         printf("proceso hijo\n");
     } else {
-        printf("proceso padre\n");
+        printf("proceso padre y mi hijo es %d\n", pid);
     }
-    return 0;
+    return 1;
 }
