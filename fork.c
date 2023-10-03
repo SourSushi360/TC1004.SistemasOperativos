@@ -12,5 +12,5 @@ int main() {
     } else {
         printf("proceso padre\n");
     }
-    return 1;
+    return 0;
 }
