@@ -20,7 +20,6 @@ int main (){
     saldo = 0;
     for (int i = 0;i < 100;i++){
         pthread_create(&t,NULL,incrementaSaldo,NULL);
-        
     }
     pthread_exit(NULL);
 }
